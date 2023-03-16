@@ -123,7 +123,26 @@ function cart(db, printProducts) {
           cart = []
           printCart()
           printProducts()
-          window.alert('Gracias por su compra')
+          window.swal( 
+          
+               {
+                    title: "Estas seguro de tu compra?",
+                    text: "Tu decision debe ser exelente , pero asegurate de que sea correcta!",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+               })
+               .then((willDelete) => {
+                    if (willDelete) {
+                         swal("!Tu compra ha sido un exito felicidades¡", {
+                         icon: "success",
+                         });
+                    } else {
+                         swal("Has el cambio, si tienes dudas escribenos");
+                    }
+                    }
+
+          )
      }
 
      printCart()

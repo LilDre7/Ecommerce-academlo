@@ -10,26 +10,47 @@
      <!-- link externos para iconos, etc -->
      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
      <!-- link internos de nuestra website -->
      <link rel="stylesheet" href="/assets/css/style.css">
+
 
      <!-- script de javaScritp -->
      <!-- Script para funcionalidad -->
      <script src="/assets/js/main.js" type="module" defer></script>
 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
 
 </head>
 
 <body>
-     
-     <!-- loader -->
-     <div class="loader loader--hidden">
-          <div class="loader__container">
-               <span></span>
-          </div>
+
+     <!-- Preloader -->
+     <div class="loader-section">
+          <span class="loader"></span>
      </div>
 
-     <!-- headeer --> 
+
+     <!-- portada de la website -->
+
+     <main class="header__main" id="inicio">
+          <div class="header-content container-content">
+               <div class="header-txt">
+                    <h1 id="title_1">Team 5 academlo!</h1>
+                    <p id="text_p">
+                         ¡Bienvenido/a a nuestro e-commerce! Descubre nuestra amplia selección de productos y encuentra justo lo que necesitas. Estamos aquí para hacerte la vida más fácil y tu experiencia de compra más satisfactoria. ¡Gracias por elegirnos!
+                    </p>
+                    <a href="https://www.academlo.com/" target="_blank" class="btn-1">Informacion</a>
+               </div>
+               <div class="header-img" id="text-header">
+                    <img src="/assets/source/iconomejorado.png" id="icono_img" alt="#">
+               </div>
+          </div>
+     </main>
+
+     <!-- headeer -->
      <header class="header">
           <nav class="nav container">
                <a href="#" class="logo">
@@ -60,7 +81,7 @@
                          <i class='bx bxs-skull'></i>
                          <span class="notify">0</span>
                     </button>
-                    
+
                     <button type="button" class="nav__btn btn-menu">
                          <i class='bx bx-grid-alt'></i>
                     </button>
@@ -76,6 +97,7 @@
                     Productos
                </h2>
                <div class="products__container container">
+
                </div>
           </section>
      </main>
@@ -94,16 +116,16 @@
                <div class="cart__body">
                     <article class="article">
                          <div class="article__image">
-                              <img src="/assets/source/goku.png" alt="Producto1" >
+                              <img src="/assets/source/goku.png" alt="Producto1">
                          </div>
                          <div class="article__content">
                               <h3 class="article__title">Camiseta de manga corta</h3>
                               <span class="article__price">$10</span>
                               <div class="article__quantity">
-                                   <button type="button" class="article__quantity-btn article--minus" >
+                                   <button type="button" class="article__quantity-btn article--minus">
                                         <i class='bx bx-minus'></i>
                                    </button>
-                                   <span class="article__quantity-text" >1</span>
+                                   <span class="article__quantity-text">1</span>
                                    <button type="button" class="article__quantity-btn article--plus">
                                         <i class='bx bx-plus'></i>
                                    </button>
@@ -135,7 +157,11 @@
                <div class="footer__top">
                     <div class="footer__left">
                          <h3 class=" footer__title">Sobre Nosotros</h3>
-                         <p class="footer__text">Proyecto creado por Alvaro Aburto y Julian Ortiz los 2 pertenecemos al equipo 05 un proyecto que nos ayudo a mejor nuestras habilidades.</p>
+                         <p class="footer__text">
+                              Proyecto diseñado y creado por los integrantes del team 05, los cuales son <b>Alvaro
+                                   Aburto Ocampo</b>, Daniel Garcia y Julian Ortiz, proyecto creado con mucho
+                              esfuerzo de muchas horas de trabajo.
+                         </p>
                     </div>
                     <div class="footer__right">
                          <h3 class="footer__title">Redes Sociales</h3>
@@ -166,5 +192,8 @@
           </div>
      </footer>
 
+
+
 </body>
+
 </html>
