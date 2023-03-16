@@ -328,6 +328,13 @@ button {
      background-color: var(--bg-color);
      padding: var(--sp-1-5);
      min-height: 109px;
+     border-radius: .6rem;
+}
+
+.product__content:hover {
+     transition: ease-in-out 2s;
+     background-color: rgb(65, 64, 64);
+     color: white;
 }
 
 .product__btn {
